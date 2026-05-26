@@ -41,7 +41,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Install Quartz plugins
-        run: npx quartz plugin install
+        # use Node to run the bootstrap CLI directly to avoid npx permission errors
+        run: node ./quartz/bootstrap-cli.mjs plugin install
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
