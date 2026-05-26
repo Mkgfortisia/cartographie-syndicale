@@ -3,6 +3,7 @@
 ## Ce que tu as ici
 
 Un site web statique avec graph de navigation construit sur **Quartz** :
+- Page d'accueil simplifiée pour une meilleure lisibilité
 - 47+ notes interconnectées (une par syndicat)
 - Liens bidirectionnels `[[CLC]]` → graph visuel des affiliations
 - Couleurs Fortisia (vert foncé #153F37, orange #FF9936)
@@ -70,10 +71,15 @@ Le site se met à jour automatiquement en 2 min.
 
 ```
 content/
-  index.md              ← Page d'accueil
+  index.md              ← Page d'accueil simplifiée
   centrales/            ← CLC, FTQ, CSN, SCFP, Unifor...
+    index.md            ← Page d'accueil de la section centrales
   federations/          ← BCGEU, OPSEU, AUPE, BCFED, AFL...
+    index.md            ← Page d'accueil de la section fédérations
   locaux/               ← ATU, IAFF, UNITE HERE, Policiers...
+    index.md            ← Page d'accueil des locaux spécialisés
+  contacts/             ← Page d'accueil des contacts syndicaux
+    index.md            ← Page d'accueil des contacts syndicaux
 ```
 
 ---
