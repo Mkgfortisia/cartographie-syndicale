@@ -44,7 +44,8 @@ jobs:
         # use Node to run the bootstrap CLI directly to avoid npx permission errors
         run: node ./quartz/bootstrap-cli.mjs plugin install
       - name: Build Quartz
-        run: npx quartz build
+        # call the bootstrap CLI with node to avoid 'quartz' permission issues
+        run: node ./quartz/bootstrap-cli.mjs build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
