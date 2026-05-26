@@ -29,7 +29,7 @@ git init
 git add .
 git commit -m "init: cartographie syndicale Fortisia"
 git branch -M main
-git remote add origin https://github.com/TON-USERNAME/cartographie-syndicale.git
+git remote add origin https://github.com/Mkgfortisia/cartographie-syndicale.git
 git push -u origin main
 ```
 
